@@ -1,0 +1,202 @@
+#------------------1 elif statements-----------------
+
+
+
+# per = float(input("Enter your percentage : "))
+
+# if per >= 90:
+#         print("Grade A")
+# elif per>= 80 and per < 90:
+#         print("Grade B")
+# elif per>=60 and per < 80:
+#         print("Grade C")
+# else:
+#         print("FAIL.")
+
+#------------------2 Dictonary DataType-----------------
+#Value stored as {key : value } -> Duplicate keys not allowed
+
+# myDict = {
+#         "Name" : "Shivam",
+#         "Profession " : "Student",
+#         "ID" : 22
+# }
+
+# print(myDict)
+# print(type(myDict))
+
+#------------------3Dictionary w/ Duplicate keys-----------------
+
+myDict = {
+    101 : "Ashish",
+    102 : "Rugvedi",
+    "103": "Mohini",
+    "104" :"Trivani",
+    101 : "Shivam",
+    104 : "Ashish"
+}
+
+#print(myDict)
+
+#------------------4-----------------
+# a = myDict[102] # -> Printing using key indexing
+# print(a)
+
+
+# myDict[102] = "Tanvi" # -> Replacement using key indexing
+# a = myDict[102]
+
+# print(a)
+
+
+
+# -> Prining only keys
+
+# for x in myDict:
+#     print(x)
+
+
+
+#-> Printing only Values
+
+# for x in myDict.values():
+#     print(x)
+
+#-> For printing both ; keys and values
+
+# for x , y in myDict.items():
+#     print(x , y)
+
+
+
+# -> For adding new key and value pair 
+
+# myDict["Mobile_No "] = 9837645863
+# print(myDict)
+
+
+
+# -> For removing a specific pair
+
+# myDict.pop(101)
+# print(myDict)
+#------------------5 String-----------------
+
+
+
+
+
+# name = "ShivamMandlekar"
+
+# print(name[0])
+# print(name[1])
+# print(name[-1])
+
+
+# print(name[0:5])
+# print(name[1:])
+# print(name[:5])
+# print(name[:])
+# print(name[1:8:2])
+# print(name[::1])
+
+#------------------6-----------------
+# s = "help4code is a good platform for Practicing Programming"
+
+# print(s.find("help4code"))
+# print(s.find("python"))
+# print(s.find("Programming"))
+
+
+
+#------------------7-----------------
+
+# s = "Shivam" , "Mandlekar"
+# m = '|'.join(s)
+# print(m)
+
+
+
+
+
+#------------------8-----------------
+
+# s = "Python is a high level programming language"
+
+# print(s.lower())
+# print(s.upper())
+# print(s.swapcase())
+# print(s.title())
+# print(s.capitalize())
+
+
+
+# #------------------9-----------------
+# print("Subject Marks :")
+# phy = 50
+# chem = 60
+# math = 70
+
+
+# print("Physics = {} Chemistry = {} Math = {}".format(phy,chem,math))
+# print("Physics = {0} Chemistry = {1} Math = {2}".format(phy,chem,math))
+# print("Physics = {x} Chemistry = {y} Math = {z}".format(x = phy,y = chem, z =math))
+
+
+
+# total = phy + chem + math
+
+# print("Total Marks" , f"{total}")
+# print("Roll No =" , "7".zfill(3))
+
+#------------------10-----------------
+
+
+# print('prashantjha777'.isalnum())   # True
+# print('prashantjha'.isalpha())      # True
+# print('777f'.isdigit())
+# print('sdsdsdsd'.islower())
+# print(''.islower())
+# print('PRASHANTJ'.isupper())
+# print('My Name Is Prashant'.istitle())
+# print(''.istitle())
+# print(''.isspace())
+# print("Hello".startswith("He"))
+# print("Hello".endswith("lo"))
+#------------------11-----------------
+
+# a = 50
+# b = 30
+# c = 20
+# d = 10
+
+# print((a+b) * c /d )
+# print((a-b) * (c/d))
+# print(a+(b*c)/d)
+#------------------12-----------------
+# x = ['A' , 'B' , 'C']
+# y = ['A' , 'B' , 'C']
+
+# z = [1 , 2 ,3 ,4]
+
+
+
+# print(x == y)
+# print(x == z)
+# print(x != z)
+#------------------13-----------------
+
+# name = "PRASHANT"
+# cons_count = 0
+# vow_count = 0
+# vow = ["A" , "E" , "I" , "O" , "U"]
+# for i in name:
+    
+#     if(i in vow):
+#         vow_count = vow_count + 1
+#     else:
+#         cons_count = cons_count + 1
+
+
+# print("Vowel Count : ", vow_count)
+# print("Consonant Count : ", cons_count)
