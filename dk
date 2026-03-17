@@ -1,0 +1,633 @@
+#day-1
+
+#typecasting is changing one data type into other
+print(2+2)
+print("2"+"2")
+val1= int(input("enter first number: "))
+val2= int(input("enter second number: "))
+print(val1+val2)
+
+
+
+#
+print(int(3.14))
+print(int(True))
+print(int(False))
+print(int("4"))
+
+#
+print(float(3))
+print(float(3.14))
+print(float(True))
+print(float(False))
+print(float("4"))
+print(float("name"))
+
+print(complex("4"))
+print(complex(4))
+print(complex(12.5))
+print(complex(True))
+print(complex(False))
+print(complex("4.7"))
+#print(complex("name"))
+print(complex(4,-4))
+print(complex(True,False))
+
+print(bool(4))
+print(bool(3.14))
+print(bool(0))
+print(bool(0.0))
+print(bool(1+2j))
+print(bool(0+0j))
+print(bool(-1))
+print(bool(False))
+print(bool(True))
+print(bool("Janhavi"))
+print(bool("janhavi"))
+
+#wap for simple input
+principal = 100000
+roi = 10
+time = 1
+si = (principal*roi*time)/100
+print("Simple interest = ",si)
+
+
+#wap to accept centigrade temp convert into farenheit
+celsius = 30
+farenheit = (celsius*9/5)+32
+print("Farenheit = ",farenheit)
+
+val1 = 34
+val2 = 56
+temp = val1
+val1 = val2
+val2 = temp
+print("val1" , val1)
+print("val2" , val2)
+
+#without using temp to save mem and for optimization
+a=100
+b=200
+a=a+b # 100+200=300
+b=a-b #200-200=100
+a=a-b #300-100 =200
+print("a" , a)
+print("b" , b)
+
+#wap to enter height of user in feet and convert into inch and cm
+h= int(input("enter height: "))
+inch = h*12
+cm = inch*2.54
+print("inch" , inch)
+print("cm" , cm)
+
+num = 123
+print(num)
+a = num % 10
+num = num // 10 #num=12
+b = num % 10 #b=2
+c = num // 10 #c=1
+rev = a*100 + b*10 + c*1
+print(rev)
+
+num = 1234567
+print(num)
+
+a = num % 10
+num = num // 10
+
+b = num % 10
+num = num // 10
+
+c = num % 10
+num = num // 10
+
+d = num % 10
+num = num // 10
+
+e = num % 10
+num = num // 10
+
+f = num % 10
+num = num // 10
+
+g = num % 10
+
+rev = a*1000000 + b*100000 + c*10000 + d*1000 + e*100 + f*10 + g*1
+
+print(rev)
+
+
+#day -2
+#collection datatype
+#list datatype
+#order wise, heterogeneous, represented by [], duplicate data allowed, by nature growable, mutuable
+mylist = ["janhavi","tanmay","aaditee",88,"mariyam",90.67,"vaishnavi"]
+print(mylist)
+print(type(mylist))
+print(mylist[0])
+print(mylist[1])
+print(mylist[2])
+#print(mylist[2.5])
+print(mylist[-1])
+print(mylist[-5])
+print(mylist[2:5])
+print(mylist[:5])
+print(mylist[1:8:2])
+print(mylist[:])
+print(mylist[::-1])
+print(mylist[1:])
+
+mylist = ["janhavi","tanmay","aaditee",88,"mariyam",90.67,"vaishnavi"]
+mylist.append('janhavi')
+mylist.append("tanmay")
+print(mylist)
+
+mylist = ["janhavi","tanmay","aaditee",88,"mariyam",90.67,"vaishnavi"]
+mylist.insert(1,"hiiii")
+print(mylist)
+
+mylist = ["janhavi","tanmay","aaditee",88,"mariyam",90.67,"vaishnavi"]
+mylist.remove('janhavi')
+print(mylist)
+
+mylist = ["janhavi","tanmay","aaditee",88,"mariyam",90.67,"vaishnavi"]
+newlist = mylist.copy() #cloning
+print(newlist)
+print(mylist)
+
+mylist = [["janhavi","tanmay"],["aaditee",88,"mariyam"],[90.67,"vaishnavi"]]
+print(mylist)
+print(type(mylist))
+#print(mylist[row][col])
+print(mylist[0][0])
+print(mylist[0][1])
+print(mylist[1][0])
+print(mylist[2][1])
+print(mylist[2][0])
+print(mylist[1][2])
+
+list1 = ["janhavi","tanmay"]
+print(list1*2)
+list2 = ["aaditee",88,"mariyam"]
+print(list1+list2)
+
+list2 = ["aaditee",88,"mariyam"]
+del list2[2]
+#del list2 (delete whole list)
+print(list2)
+
+list2 = ["aaditee",88,"mariyam"]
+list2.clear()
+print(list2)
+
+name = "janhavi"
+print(name)
+myname=list(name) #typecasting
+print(myname)
+
+#sorting example
+mylist = [22,55,45,67,75,45,84,35,59,7]
+mylist.sort()
+print(mylist)
+#default sorting is ascending\
+#for string its alphabetical order
+#for sorting list should contain homogeneous
+#for decending reverse=True
+mylist.sort(reverse=True)
+print(mylist)
+
+math = 10
+print(id(math))
+
+math= 50
+phy = 50
+print(id(math))
+print(id(phy))
+#same address ayega kyuki we already use it for math isliye alag alag memory same data ke liye use nhi karega
+
+#aliasing means assinging one variable refercence to another variable
+mylist = [22,55,45,67,75,45,84,35,59,7]
+newlist=mylist
+print(id(mylist))
+print(id(newlist))
+
+# two types of special oprator
+# 1 memebership operator in and not in
+name = 'janhavi'
+print('Z' in name)
+print('Z' not in name)
+
+
+#looping
+for i in range(6):
+    print(i)
+for i in range(2,6):
+    print(i)
+for i in range(1,10,2):
+    print(i)
+for i in range(1,10,3):
+    print(i)
+for i in range(5,0,-1):
+    print(i)
+for i in range(1,11):
+    print(i*2)
+
+for i in range(1,11):
+    print(i*2,"" ,i*3,"", i*4,"", i*5, "", i*6,"",  i*7,"", i*8,"", i*9,"", i*10)
+for i in range(1,11):
+    print(i*11,"" ,i*12,"", i*13,"", i*14, "", i*15,"",  i*16,"", i*17,"", i*18,"", i*19)
+
+#relationational operator greater than, less than
+no = int(input("enter any digit:"))
+if no > 0:
+    print("positive")
+if no<0:
+    print("negative")
+if no==0:
+  print("zero")
+
+#wap to accept days and check the woring days and weekend
+day = input("Enter the day: ").lower()
+
+if day in ["saturday", "sunday"]:
+    print("Weekend")
+elif day in ["monday", "tuesday", "wednesday", "thursday", "friday"]:
+    print("Working Day")
+else:
+    print("Invalid Day")
+
+#logical and operator
+day = input("Enter the day: ").lower()
+
+if day == "saturday" or day == "sunday":
+    print("Weekend")
+else:
+    print("Working Day")
+
+#wap to accept three paper marks and calculate total, percentage and if percentage is greater than eq5ual to 60 then he/she is eligible for placement
+m1 = int(input("Enter marks of paper 1: "))
+m2 = int(input("Enter marks of paper 2: "))
+m3 = int(input("Enter marks of paper 3: "))
+total = m1 + m2 + m3
+percentage = total / 3
+
+print("Total Marks =", total)
+print("Percentage =", percentage)
+
+if percentage >= 60:
+    print("Eligible for Placement")
+else:
+    print("Not Eligible for Placement")
+
+#wap to accept five different value in 5 diff var and check max value and print by using "simple if statement"
+a = int(input("Enter value 1: "))
+b = int(input("Enter value 2: "))
+c = int(input("Enter value 3: "))
+d = int(input("Enter value 4: "))
+e = int(input("Enter value 5: "))
+if a>b and a>c and a>d and a>e:
+    print("Maximum value is:", a)
+
+if b>a and b>c and b>d and b>e:
+    print("Maximum value is:", b)
+
+if c>a and c>b and c>d and c>e:
+    print("Maximum value is:", c)
+
+if d>a and d>b and d>c and d>e:
+    print("Maximum value is:", d)
+
+if e>a and e>b and e>c and e>d:
+    print("Maximum value is:", e)
+
+#day2
+
+#------------------1 elif statements-----------------
+
+
+
+# per = float(input("Enter your percentage : "))
+
+# if per >= 90:
+#         print("Grade A")
+# elif per>= 80 and per < 90:
+#         print("Grade B")
+# elif per>=60 and per < 80:
+#         print("Grade C")
+# else:
+#         print("FAIL.")
+
+#------------------2 Dictonary DataType-----------------
+#Value stored as {key : value } -> Duplicate keys not allowed
+
+# myDict = {
+#         "Name" : "Shivam",
+#         "Profession " : "Student",
+#         "ID" : 22
+# }
+
+# print(myDict)
+# print(type(myDict))
+
+#------------------3Dictionary w/ Duplicate keys-----------------
+
+myDict = {
+    101 : "Ashish",
+    102 : "Rugvedi",
+    "103": "Mohini",
+    "104" :"Trivani",
+    101 : "Shivam",
+    104 : "Ashish"
+}
+
+#print(myDict)
+
+#------------------4-----------------
+# a = myDict[102] # -> Printing using key indexing
+# print(a)
+
+
+# myDict[102] = "Tanvi" # -> Replacement using key indexing
+# a = myDict[102]
+
+# print(a)
+
+
+
+# -> Prining only keys
+
+# for x in myDict:
+#     print(x)
+
+
+
+#-> Printing only Values
+
+# for x in myDict.values():
+#     print(x)
+
+#-> For printing both ; keys and values
+
+# for x , y in myDict.items():
+#     print(x , y)
+
+
+
+# -> For adding new key and value pair 
+
+# myDict["Mobile_No "] = 9837645863
+# print(myDict)
+
+
+
+# -> For removing a specific pair
+
+# myDict.pop(101)
+# print(myDict)
+#------------------5 String-----------------
+
+
+
+
+
+# name = "ShivamMandlekar"
+
+# print(name[0])
+# print(name[1])
+# print(name[-1])
+
+
+# print(name[0:5])
+# print(name[1:])
+# print(name[:5])
+# print(name[:])
+# print(name[1:8:2])
+# print(name[::1])
+
+#------------------6-----------------
+# s = "help4code is a good platform for Practicing Programming"
+
+# print(s.find("help4code"))
+# print(s.find("python"))
+# print(s.find("Programming"))
+
+
+
+#------------------7-----------------
+
+# s = "Shivam" , "Mandlekar"
+# m = '|'.join(s)
+# print(m)
+
+
+
+
+
+#------------------8-----------------
+
+# s = "Python is a high level programming language"
+
+# print(s.lower())
+# print(s.upper())
+# print(s.swapcase())
+# print(s.title())
+# print(s.capitalize())
+
+
+
+# #------------------9-----------------
+# print("Subject Marks :")
+# phy = 50
+# chem = 60
+# math = 70
+
+
+# print("Physics = {} Chemistry = {} Math = {}".format(phy,chem,math))
+# print("Physics = {0} Chemistry = {1} Math = {2}".format(phy,chem,math))
+# print("Physics = {x} Chemistry = {y} Math = {z}".format(x = phy,y = chem, z =math))
+
+
+
+# total = phy + chem + math
+
+# print("Total Marks" , f"{total}")
+# print("Roll No =" , "7".zfill(3))
+
+#------------------10-----------------
+
+
+# print('prashantjha777'.isalnum())   # True
+# print('prashantjha'.isalpha())      # True
+# print('777f'.isdigit())
+# print('sdsdsdsd'.islower())
+# print(''.islower())
+# print('PRASHANTJ'.isupper())
+# print('My Name Is Prashant'.istitle())
+# print(''.istitle())
+# print(''.isspace())
+# print("Hello".startswith("He"))
+# print("Hello".endswith("lo"))
+#------------------11-----------------
+
+# a = 50
+# b = 30
+# c = 20
+# d = 10
+
+# print((a+b) * c /d )
+# print((a-b) * (c/d))
+# print(a+(b*c)/d)
+#------------------12-----------------
+# x = ['A' , 'B' , 'C']
+# y = ['A' , 'B' , 'C']
+
+# z = [1 , 2 ,3 ,4]
+
+
+
+# print(x == y)
+# print(x == z)
+# print(x != z)
+#------------------13-----------------
+
+# name = "PRASHANT"
+# cons_count = 0
+# vow_count = 0
+# vow = ["A" , "E" , "I" , "O" , "U"]
+# for i in name:
+    
+#     if(i in vow):
+#         vow_count = vow_count + 1
+#     else:
+#         cons_count = cons_count + 1
+
+
+# print("Vowel Count : ", vow_count)
+# print("Consonant Count : ", cons_count)
+
+#day - 4
+for i in range(1,5):
+  if i==3:
+    break
+  print(i)
+
+for i,j in zip(range(1,6),range(5,0,-1)):
+  if i==3 and j == 3:
+    continue
+  print(i,j)
+
+
+i =1
+while i<=5:
+  print(i)
+  i=i+1
+
+username=''
+password=''
+while username != "admin" and password != "hello":
+  username = input("Enter username: ")
+  password = input("Enter password: ")
+
+
+n= int(input("Enter number:"))
+sum=0
+i=1
+while i<=n:
+  sum=sum+i
+  i=i+1
+print("the sum of first",n,"number is:",sum)
+
+
+name="prashant"
+newname=""
+for i in name:
+  if i not in newname:
+    newname += i
+print(name)
+print(newname)
+
+name ="janhavi"
+print(name[::-1])
+s = input("Enter a string: ")
+rev = ""
+for i in s:
+    rev = i + rev
+print("Reverse string:", rev)
+
+mycart=[10,20,200,300,800,60,700]
+for i in mycart:
+  if i >400:
+    print("this is my purchased cart item")
+    continue
+  print(i)
+
+a = input("Enter a string: ")
+rev = ""
+for i in a:
+    rev = i + rev
+if a == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+name= input("enter name : ")
+if name == name[::-1]:
+  print("palindrome")
+else:
+  print("not palindrome")
+
+#anagram
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+
+if sorted(s1) == sorted(s2):
+    print("Anagram")
+else:
+    print("Not Anagram")
+
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+
+if len(s1) == len(s2):
+    for i in s1:
+        if i not in s2:
+            print("Not Anagram")
+            break
+    else:
+        print("Anagram")
+else:
+    print("Not Anagram")
+
+d = {"a":10, "b":20, "c":30, "d":40}
+key = input("Enter key to remove: ")
+if key in d:
+    del d[key]
+    print("Updated dictionary:", d)
+else:
+    print("Key not found")
+
+#nested for loop
+for i in range(1,4):
+  for j in range(1,4):
+    print(i, end=" ")
+  print()
+
+n= int(input("enter the number of rows"))
+for i in range(1,n+1):
+  for j in range(1,n+1):
+    print(chr(64+1),end=" ")
+  print()
+
+n= int(input("enter the number of rows"))
+for i in range(1,n+1):
+  for j in range(1,n+1):
+    print(n+1-i,end=" ")
+  print()
+
+n= int(input("enter the number of rows"))
+for i in range(1,n+1):
+  for j in range(1,n+1):
+    print("*",end=" ")
+  print()
