@@ -32,7 +32,7 @@ The provided Python file contains 13 commented-out blocks of code. Each block fo
 * **Operator Precedence (Block 11):** Demonstrating how parentheses affect the order of arithmetic operations (PEMDAS/BODMAS rule).
 * **List Comparison (Block 12):** Using equality (`==`) and inequality (`!=`) operators to compare the contents of different lists.
 
-## 🛠️ How to Use
+##  How to Use
 
 1. Clone or download the file to your local machine.
 2. Ensure you have [Python](https://www.python.org/downloads/) installed.
